@@ -11,12 +11,8 @@
 sudo mkdir "$AUTOWARE_PATH"
 sudo chown "$(whoami)": "$AUTOWARE_PATH"
 cd "$WEBAUTO_CI_SOURCE_PATH"
-pwd
-ls -la
 cp -r .webauto-ci.* "$AUTOWARE_PATH"
 cd "$AUTOWARE_PATH"
-pwd
-ls -la
 
 if [ -n "$CCACHE_DIR" ]; then
     mkdir -p "$CCACHE_DIR"
