@@ -31,6 +31,7 @@ sudo -E apt-get -y update
 mkdir -p src
 vcs import src --recursive < $WEBAUTO_CI_SOURCE_PATH/repositories/autoware.repos
 vcs import src --recursive < $WEBAUTO_CI_SOURCE_PATH/repositories/simulator.repos
+vcs import src --recursive < $WEBAUTO_CI_SOURCE_PATH/repositories/tools.repos
 
 # shellcheck disable=SC2012
 ROS_DISTRO=$(ls -1 /opt/ros | head -1)
