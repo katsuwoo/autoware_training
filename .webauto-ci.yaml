@@ -71,7 +71,6 @@ artifacts:
               - .webauto-ci/main/autoware-build/**/*
               - repositories/autoware.repos
               - repositories/simulator.repos
-              - repositories/tools.repos
         - name: asset-deploy
           user: autoware
           exec: ./.webauto-ci/main/asset-deploy/run.sh
